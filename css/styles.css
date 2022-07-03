@@ -1,0 +1,247 @@
+:root{
+    --primary-text-color: #757575;
+    --titel-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-bg-color: #ffffff;
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+}
+
+ul {
+    list-style: none;
+}
+a {text-decoration: none;}
+
+/* цвет основного текста #212121*/
+/* цвет вторичного текста #757575*/
+/* акцент #2196F3 */
+/* цвет фона первичный #E5E5E5 */
+/* цвет фона вторичный #F5F4FA*/
+
+.logo span {
+    color: #000000;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.logo {
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+/* site-nav */
+
+.site-nav .link {
+    color: var(--titel-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+/* address */
+
+.address .mail,
+.address .number {
+    color: rgba(117, 117, 117, 1);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.address .mail:hover,
+.address .mail:focus {
+    color: var(--accent-color);
+}
+
+.address .number:hover,
+.address .number:focus {
+    color: var(--accent-color);
+}
+
+/* address footer */
+
+.footer-logo span {
+    color: var(--primary-bg-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+.footer-logo {
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+footer {
+    background-color: #2F303A;
+}
+
+.address-footer .main {
+    color: #FFFFFF;
+    line-height: 1.7;
+    font-style: normal;
+}
+
+.address-footer .mail,
+.address-footer .number {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.7;
+    font-style: normal
+}
+
+.address-footer .mail:hover,
+.address-footer .mail:focus {
+    color: var(--accent-color);
+}
+
+.address-footer .number:hover,
+.address-footer .number:focus {
+    color: var(--accent-color);
+}
+
+/* section */
+.element-invisible {
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
+
+.section-title {
+    color: var(--titel-text-color);
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+.section-title.hidden {
+         position: absolute;
+         width: 1px;
+         height: 1px;
+         margin: -1px;
+         border: 0;
+         padding: 0;
+         white-space: nowrap;
+         clip-path: inset(100%);
+         clip: rect(0 0 0 0);
+         overflow: hidden;
+            }
+
+/* hero */
+.hero { background-color: #2F303A;}
+
+.hero-title {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.team .title {
+    color: var(--titel-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.team-text {
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.business .title {
+    color: var(--titel-text-color);
+    line-height: 1.14;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.business-text {
+    line-height: 1.7;
+}
+
+.card .title {
+    color: var(--titel-text-color);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* button */
+
+.hero-button {
+    color: var(--primary-bg-color);
+    background-color: #2196F3;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #2196F3;
+    color: var(--primary-bg-color);
+}
+
+.filter-button {
+    color: var(--titel-text-color);
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    color: var(--primary-bg-color);
+    background-color: #2196F3;
+}
+.filter-button.active {
+background-color: var(--accent-color);
+color: var(--primary-bg-color);
+}
