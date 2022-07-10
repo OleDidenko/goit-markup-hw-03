@@ -18,6 +18,7 @@ body {
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
     font-size: 14px;
+    margin: 0;
 }
 
 ul {
@@ -27,12 +28,16 @@ ul {
 }
 a {text-decoration: none;}
 
+
+
+
 /* цвет основного текста #212121*/
 /* цвет вторичного текста #757575*/
 /* акцент #2196F3 */
 /* цвет фона первичный #E5E5E5 */
 /* цвет фона вторичный #F5F4FA*/
 
+/* Logo */
 .logo span {
     color: #000000;
     font-family: Raleway, sans-serif;
@@ -50,17 +55,20 @@ a {text-decoration: none;}
     line-height: 1.2;
 }
 .container {
-    width: 1230;
+    width: 1230px;
     background-color: antiquewhite;
-    margin-left: auto;
-    margin-right: auto;
-    outline: 2px solid tomato;
-}
-/* site-nav */
- 
- 
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;    
+    display: inline-block; 
+    }
 
-.site-nav, .main-nav {
+/* site-nav */
+ .main-header  {
+    display: flex;
+   align-items: center;
+}
+.site-nav {
     display: flex;
     align-items: center;
    }
@@ -75,11 +83,10 @@ a {text-decoration: none;}
     line-height: 1.14;
     letter-spacing: 0.02em;
     
-}
+    }
 .site-nav .item:not(:last-child) {
-    margin-right: 50px;}
-        
-
+    margin-right: 50px;
+}
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
@@ -89,11 +96,10 @@ a {text-decoration: none;}
     color: var(--accent-color);
 }
 
+
 /* address */
-.container .address {
-    align-items: center;
-    display: flex;
-}
+.address {display: flex;}
+
 .address .item:not(:last-child) {
     margin-right: 50px;
 }
@@ -160,6 +166,7 @@ footer {
 }
 
 /* section */
+
 .element-invisible {
     position: absolute;
         width: 1px;
@@ -182,7 +189,9 @@ footer {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    margin-top: 0;
+    margin-top: 94px;
+    margin-bottom: 0;
+
 }
 .section-title.hidden {
          position: absolute;
@@ -196,12 +205,11 @@ footer {
          clip: rect(0 0 0 0);
          overflow: hidden;
             }
-.page-header {
-    display: flex;
-    outline: 2px solid green;
 
-}
+
+
 /* hero */
+
 .hero { 
     background-color: #2F303A;
     text-align: center;
@@ -221,15 +229,36 @@ footer {
     text-transform: uppercase;
 }
 
+/* Picture */
+
+.picture-image no-gap {
+    display: block;
+}
 .picture {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.picture .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* team */
+
  .team {
     display: flex;
  }
+ .team .item {
+    margin-top: 50px
+ }
+ .team .item:not(:last-child) {
+    margin-right: 30px;
+ }
 .team .title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
     color: var(--titel-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -237,14 +266,26 @@ footer {
 }
 
 .team-text {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
     font-size: 16px;
     line-height: 1.19;
 }
 
-.business {
-    display: flex;
-}
+/* business */
 
+.business {
+    display: flex; 
+ }
+  
+    
+
+.business .item:not(:last-child) {
+    margin-right: 30px;
+}
 .business .title {
     margin-top: 0;
     margin-bottom: 10;
@@ -258,16 +299,22 @@ footer {
     line-height: 1.7;
 }
 
+/* card portfolio */
+
 .card .title {
     color: var(--titel-text-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .card-text {
     font-size: 16px;
     line-height: 1.9;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* button */
@@ -284,6 +331,7 @@ footer {
     letter-spacing: 0.06em;
     cursor: pointer;
     font-family: inherit;
+    border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -292,6 +340,14 @@ footer {
     color: var(--primary-bg-color);
 }
 
+/* filter */
+
+.filter {
+    display: flex;
+    }
+.filter .item:not(:last-child) {
+    margin-right: 30px;
+}
 .filter-button {
     color: var(--titel-text-color);
     background-color: #F5F4FA;
@@ -301,6 +357,8 @@ footer {
     text-align: center;
     cursor: pointer;
     font-family: inherit;
+    border-radius: 4px;
+    
 }
 
 .filter-button:hover,
