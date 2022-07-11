@@ -37,7 +37,19 @@ a {text-decoration: none;}
 /* цвет фона первичный #E5E5E5 */
 /* цвет фона вторичный #F5F4FA*/
 
+.container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: block;
+}
+.container .main-header {
+    display: flex;
+    /* align-items: center; */
+}
 /* Logo */
+
 .logo span {
     color: #000000;
     font-family: Raleway, sans-serif;
@@ -53,20 +65,16 @@ a {text-decoration: none;}
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-}
-.container {
-    width: 1230px;
-    background-color: antiquewhite;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;    
-    display: inline-block; 
     }
+    
+
 
 /* site-nav */
  .main-header  {
     display: flex;
    align-items: center;
+   padding-top: 32px;
+   padding-bottom: 32px;
 }
 .site-nav {
     display: flex;
@@ -75,8 +83,8 @@ a {text-decoration: none;}
 
 .site-nav .link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    /* padding-top: 32px;
+    padding-bottom: 32px; */
 
     color: var(--titel-text-color);
     font-weight: 500;
@@ -98,7 +106,9 @@ a {text-decoration: none;}
 
 
 /* address */
-.address {display: flex;}
+.address {display: flex;
+margin-left: auto;
+}
 
 .address .item:not(:last-child) {
     margin-right: 50px;
@@ -140,6 +150,8 @@ a {text-decoration: none;}
 
 footer {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .address-footer .main {
@@ -181,7 +193,7 @@ footer {
 }
 .section {
     margin-top: 94px;
-    display: inline-block;
+    display: block;
     
 }
 .section-title {
@@ -190,7 +202,7 @@ footer {
     line-height: 1.17;
     text-align: center;
     margin-top: 94px;
-    margin-bottom: 0;
+    margin-bottom: 50px;
 
 }
 .section-title.hidden {
@@ -217,12 +229,13 @@ footer {
 }
 
 .hero-title {
-    margin-top: 0;
+    margin-top: 0px;
     margin-bottom: 29px;
     color: #FFFFFF;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
+    padding-top: 200px;
 
     text-align: center;
     letter-spacing: 0.06em;
@@ -248,6 +261,14 @@ footer {
 
  .team {
     display: flex;
+ }
+ .section-title.team {
+    margin-bottom: 0;
+    display: block;
+    text-align: center;
+ }
+ .team-foto {
+    margin-top: 0;
  }
  .team .item {
     margin-top: 50px
@@ -277,8 +298,9 @@ footer {
 
 /* business */
 
-.business {
+.container .business {
     display: flex; 
+    align-items: center;
  }
   
     
@@ -300,8 +322,20 @@ footer {
 }
 
 /* card portfolio */
-
-.card .title {
+.cards img {
+    width: 100%;
+    height: auto;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.cards .item {
+    width: 33.333%;
+    padding: 0 15px;
+}
+.cards .title {
     color: var(--titel-text-color);
     font-size: 18px;
     line-height: 2;
@@ -321,18 +355,21 @@ footer {
 
 .hero-button {
     display: inline-block;
-    color: var(--primary-bg-color);
-    background-color: #2196F3;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
     font-family: inherit;
     border-radius: 4px;
-}
+    margin-top: 30px;
+    margin-bottom: 200px;
+
+    color: var(--primary-bg-color);
+    background-color: #2196F3;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    }
 
 .hero-button:hover,
 .hero-button:focus {
@@ -344,7 +381,10 @@ footer {
 
 .filter {
     display: flex;
+    justify-content: center;
+    margin: 0 auto 56px;
     }
+  
 .filter .item:not(:last-child) {
     margin-right: 30px;
 }

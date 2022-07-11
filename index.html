@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css"/>
 </head>
-<body class="page">
-    <header class="page-header">
+<body>
+    <header class="header">
         <div class="container main-header">
-        <nav>
+            <div>            
             <a href="./index.html" class="logo">Web<span>Studio</span></a>
+            </div>            
+            <nav>
         <ul class="site-nav">                        
             <li class="item">
                 <a class="link current" href="./">Студия</a></li>
@@ -31,8 +33,8 @@
                 <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li> <!--cursor: pointer; -->
             <li class="item">
                 <a class="number" href="+380961111111">+38 096 111 11 11</a></li>
-        </ul> 
-        </div>      
+        </ul>          
+        </div>        
     </header>
     <main>
       <section class="hero">
@@ -66,15 +68,15 @@
     <div class="container">
     <h2 class="section-title">Чем мы занимаемся</h2>
     <ul class="picture">
-        <li class="item"><img  src="./images/img-4.jpg" class="picture-image no-gap" alt="Рабочий стол с гаджетами" width="370"></li>
-        <li class="item"><img  src="./images/img-5.jpg" class="picture-image no-gap" alt="Гаджеты" width="370"></li>
-        <li class="item"><img  src="./images/img-6.jpg" class="picture-image no-gap" alt="Айпед" width="370"></li>
+        <li class="item"><img src="./images/img-4.jpg" class="picture-image no-gap" alt="Рабочий стол с гаджетами" width="370"></li>
+        <li class="item"><img src="./images/img-5.jpg" class="picture-image no-gap" alt="Гаджеты" width="370"></li>
+        <li class="item"><img src="./images/img-6.jpg" class="picture-image no-gap" alt="Айпед" width="370"></li>
     </ul>
     </div>
   </section>
   <section  class="section">
     <div class="container">
-    <h2 class="section-title">Наша команда</h2>
+    <h2 class="section-title team">Наша команда</h2>
     <ul class="team">
         <li class="item"><img src="./images/img-igor.jpg" class="team-foto" alt="Фото1" width="270">
         <h3 class="title">Игорь Демьяненко</h3>
@@ -96,16 +98,18 @@
     </div>
   </section> 
 </main>
-  <footer>
+  <footer class="footer">
+    <div class="container">
     <a href="./index.html" class="footer-logo">Web<span>Studio</span></a>
 <address>
     <ul class="address-footer">
-        <li><a href="https://bit.ly/3pXMvUd" class="main" target="_blank" rel="noopener noreferrer">г. Киев, пр-т
+        <li class="item"><a href="https://bit.ly/3pXMvUd" class="main" target="_blank" rel="noopener noreferrer">г. Киев, пр-т
                 Леси Украинки, 26</a></li>
-        <li><a class="mail" href="mailto:info@devstudio.com"  >info@example.com</a></li>
-        <li><a class="number" href="tel:+380991111111">+38 099 111 11 11</a></li>
+        <li class="item"><a class="mail" href="mailto:info@devstudio.com"  >info@example.com</a></li>
+        <li class="item"><a class="number" href="tel:+380991111111">+38 099 111 11 11</a></li>
     </ul>
 </address>
+</div>
 </footer>
 </body>
 </html>
