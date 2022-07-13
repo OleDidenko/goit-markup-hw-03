@@ -35,7 +35,7 @@ a {text-decoration: none;}
 /* цвет фона вторичный #F5F4FA*/
 
 .container {
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -43,8 +43,8 @@ a {text-decoration: none;}
 }
 .container .main-header {
     display: flex;
-    /* height: 80px; */
-}
+    }
+
     /* Logo */
 
 .logo span {
@@ -64,18 +64,16 @@ a {text-decoration: none;}
     line-height: 1.2;
     }
     
-
-
 /* site-nav */
 
  .main-header  {
     display: flex;
    align-items: center;
-   padding-top: 32px;
-   padding-bottom: 32px;
-   height: 80px;
-}
-.site-nav {
+   padding-top: 24px;
+   padding-bottom: 25px;
+ }
+   
+   .site-nav {
     display: flex;
     align-items: center;
    }
@@ -199,7 +197,7 @@ footer {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    margin-top: 94px;
+    margin: 0;
     margin-bottom: 50px;
 
 }
@@ -216,8 +214,6 @@ footer {
          overflow: hidden;
             }
 
-
-
 /* hero */
 
 .hero { 
@@ -225,8 +221,7 @@ footer {
     text-align: center;
     padding-bottom: 200px;
     height: 600px;
-    
-}
+    }
 
 .hero-title {
     margin-top: 0px;
@@ -244,6 +239,11 @@ footer {
 
 /* Picture */
 
+.section .what-we-do {
+    padding-top: 0;
+    text-align: center;
+    }
+
 .picture-image no-gap {
     display: block;
 }
@@ -259,7 +259,7 @@ footer {
 
 /* team */
 
-.section .team {
+.section.team {
     background-color: #F5F4FA;
 }
 
@@ -268,6 +268,7 @@ footer {
     
  }
  .section-title.team {
+        margin-top: 0;
     margin-bottom: 0;
     display: block;
     text-align: center;
@@ -277,14 +278,15 @@ footer {
  }
  .team .item {
     margin-top: 50px;
-background-color: var(--primary-bg-color)
+    background-color: var(--primary-bg-color)
  }
  .team .item:not(:last-child) {
     margin-right: 30px;
  }
 .team .title {
     text-align: center;
-    margin-top: 30px;
+    padding-top: 30px;
+    margin: 0;
     margin-bottom: 10px;
     color: var(--titel-text-color);
     font-weight: 500;
@@ -293,11 +295,9 @@ background-color: var(--primary-bg-color)
 }
 
 .team-text {
-    margin-top: 0;
     text-align: center;
-    margin-bottom: 30px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin: 0;
+    padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
 }
@@ -308,9 +308,7 @@ background-color: var(--primary-bg-color)
     display: flex; 
     align-items: center;
  }
-  
-    
-
+   
 .business .item:not(:last-child) {
     margin-right: 30px;
 }
@@ -329,6 +327,10 @@ background-color: var(--primary-bg-color)
 
 /* card portfolio */
 
+.card-border {
+    padding: 20px 24px;
+    border-bottom: 1px solid #EEEEEE;
+}
 .cards img {
     width: 100%;
     height: auto;
@@ -341,8 +343,11 @@ background-color: var(--primary-bg-color)
 .cards .item {
     width: 33.333%;
     padding: 0 15px;
-    border: 1px solid #EEEEEE;
-}
+    margin-bottom: 30px;
+    }
+.cards .item:nth-child(6n+1) {
+    margin-bottom: 0;
+}   
 .cards .title {
     color: var(--titel-text-color);
     font-size: 18px;
@@ -407,9 +412,10 @@ background-color: var(--primary-bg-color)
     text-align: center;
     cursor: pointer;
     font-family: inherit;
+    border: none;
     border-radius: 4px;
     width: 130px;
-    height: 38px;
+    padding: 6px 22px;
     
 }
 
