@@ -65,7 +65,7 @@ a {text-decoration: none;}
     }
     
 /* site-nav */
-.feader { border-bottom: 1px solid #ececec;}
+.header { border-bottom: 1px solid #ececec;}
 
  .main-header  {
     display: flex;
